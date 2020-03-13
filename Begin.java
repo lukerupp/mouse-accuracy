@@ -5,6 +5,7 @@
  */
 package mouseaccuracy;
 
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -15,23 +16,21 @@ import javax.swing.ImageIcon;
  *
  * @author 802811
  */
-public class Target extends Sprite {
-    private Image img;
+public class Begin extends Sprite {
+ private Image img;
     private ImageIcon ii;
     private static final int SPEED = 0;
-    private static final int WIDTH = 60;
-    private static final int HEIGHT = 60;
+    private static final int WIDTH = 200;
+    private static final int HEIGHT = 150;
     private static final Color COLOR = Color.BLUE;
-    public Target (int x, int y) {
+    public Begin (int x, int y) {
         super (x, y, WIDTH, HEIGHT, SPEED, COLOR);
-        this.ii = new ImageIcon(getClass().getResource("target.png"));
+        this.ii = new ImageIcon(getClass().getResource("New Piskel.png"));
                             this.img = ii.getImage();
     }
     public void draw(Graphics g) {
         g.drawImage(img, super.getX(), super.getY(), super.getWidth(), super.getHeight(), null);
     }
 
-    
-    
-    
-}
+  
+    }

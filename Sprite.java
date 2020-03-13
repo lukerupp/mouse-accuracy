@@ -35,7 +35,7 @@ public class Sprite {
     public void die() {
         this.alive = false;
     }
-
+    
     public int getX() {
         return x;
     }
